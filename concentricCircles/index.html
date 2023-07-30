@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Igra Koncentrični Krugovi</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="introContainer">
+      <div id="introText">
+        Dobrodošli u igru Koncentrični Krugovi!
+        <br />
+        <br />
+        Ovo je vizuelizacija zadatka iz knjige, oblast 7, zadatak 2.
+        <br />
+        <br />
+        Data su dva koncentrična kruga, poluprečnika 4 i 5. Počinjete igru pritiskom na dugme ispod, čime se na slučajan
+        način bira jedna tačka iz velikog kruga. Zatim „gađate“ tu tačku sledećim pritiskom na S ili dodirom na ekran u
+        slučaju da igrate na mobilnom uređaju, što dovodi do slučajnog biranja tačke iz manjeg kruga i konstruisanja
+        kruga sa centrom u izabranoj tački i poluprečnikom 1. Ako taj krug sadrži početnu tačku, dobijate 1 poen, a ako
+        ne imate pravo na sledeće gađanje. Igra se završava pogotkom ili posle 5 promašaja.
+        <br />
+        <br />
+        Pritisnite dugme ispod da započnete igranje.
+      </div>
+      <button id="startButton">Započni igru</button>
+    </div>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <div id="infoPanel">
+      <p>Broj pokušaja: <span id="attemptsText">0/5</span></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
